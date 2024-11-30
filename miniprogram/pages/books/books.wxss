@@ -1,0 +1,267 @@
+/* pages/books/books.wxss */
+.type {
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  margin: 0;
+}
+
+.type view {
+  margin: 0;
+}
+
+.select {
+  width: 40%;
+  height: 25px;
+  text-align: center;
+  color: black;
+  border-bottom: 5rpx solid;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+
+.default {
+  width: 40%;
+  height: 25px;
+  text-align: center;
+}
+
+.type view {
+  margin: 0 auto;
+}
+
+.book-info {
+  width: 70%;
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.book {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+
+.pic image {
+  width: 80px;
+  height: 100px;
+  padding: 10px;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}
+
+.btn button {
+  color: green;
+  border: 1px solid green;
+  background-color: #ffffff;
+}
+
+.first {
+  width: 100px;
+  height: 30px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fe4e62;
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+.second {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #cccccc;
+  margin-right: 10px;
+}
+
+.fenlei {
+  font-size: 16px;
+}
+
+.intro {
+  widows: 40%;
+}
+
+.Class {
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 11px;
+}
+
+.hr2 {
+  height: 10px;
+  width: 100%;
+  background: #cccccc;
+  opacity: 0.2;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+.list2 {
+  width: 90%;
+  height: 100%;
+}
+
+.booklist {
+  width: 90%;
+  margin: center;
+}
+
+.listpic {
+  widows: 80%;
+  margin: center;
+}
+
+.book-info2 {
+  margin: center;
+}
+
+.content1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 375rpx;
+  margin: 2 2 20rpx 2;
+}
+
+.item image {
+  width: 90%;
+  height: 450rpx;
+  margin-left: 5px;
+}
+
+.item text {
+  font-size: 14px;
+  margin-left: 10px;
+  position: center;
+  width: 80%;
+}
+
+.product {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.cart {
+  width: 20%;
+  margin-left: 20px;
+}
+
+.product image {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+/*整体框架样式：flex模式，左侧菜单，右侧产品*/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+}
+/*左侧-分类*/
+.aside{
+  margin-top: 1px;
+width:4rem;
+border-right: 1px solid #ddd;
+	font-size: .85rem; height: 100%;
+   display: flex;
+   flex-direction: column; /*定义菜单显示方式，从上到下排列*/
+}
+.type-nav{ /*分类通用样式*/
+	position: relative;
+	padding:.7rem .3rem;
+	text-align: center; /*居中*/
+	border-bottom: 1px solid #ddd; /*每个分类下面的灰色横线*/
+	z-index: 10;
+}
+.type-nav.selected{/*选中某个分类的样式*/
+	margin-right: -1px;
+	padding-left:-1px;
+	color: #333;
+	background-color: #fff; /*白色背景，选中时候突出显示*/
+}
+
+/*右侧-1行3列图片*/
+.content2{/*右侧框架总样式*/
+  margin-top: 0%;
+	background-color: #fff;
+  flex: 1; /*定义产品列表占满所有空间，这里背景都是白色*/
+}
+.cps {/*右侧产品的总样式*/
+  display: flex; 
+  flex-wrap:  wrap; /*自动换行*/
+}
+.cp-item {
+  width: 30%;/*考虑右侧留点空白，按1行排列3个产品的比例来设计*/
+  display: flex;
+  padding: 2px;
+}
+.navigator
+{
+  display: flex;
+  flex-direction: column; /*定义产品图片、名称、价格从上到下按行排列*/
+}
+.cp-image {
+  width: 180rpx;height: 180rpx;  
+margin: 1px;  padding: 1px;
+}
+.cp-item text {
+  padding-top: 10rpx;
+  font-size: 25rpx; 
+  text-align:  center; /*文字居中显示，默认靠左*/
+  width: 100%;
+} 
+.content3{
+  font-family: "Microsoft YaHei";
+  background-color: #e3f2f3;
+}
+.search{
+  width: 80%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color:#ffffff ;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+align-items: center;
+}
+.search image{
+  margin-left: 10px;
+}
+
+ 
+
+ 
+ 

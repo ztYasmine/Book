@@ -1,0 +1,87 @@
+<!--pages/sousuo/sousuo.wxml-->
+<view class="content">
+  <view class="sousuo">
+    <view class="search">
+      <image src="/images/icon/search.png" style="width:35px;height:29px;"></image>
+      <input placeholder="请输入书名" type="text" bindinput="bindInputName"></input>
+    </view>
+    <button type="primary" size="mini" style="font-family:黑体"bindtap="bindSearch">搜索</button>
+  </view>
+
+  <view wx:if="{{length > 0}}">
+    <view class="bg" wx:for="{{book}}" >
+    <view class="book">
+      <view class="pic">
+        <image src="{{item.image}}" mode="aspectFit"></image>
+      </view>
+   
+
+      <view class="base-info">
+        <view class="name">书名:{{item.title}}</view>
+        <view class=" desc">作者:{{item.author}}</view>
+        <view class="desc">出版社：{{item.publisher}}</view>
+        <view class="desc">价格：¥{{item.price}}</view>
+        <view class="desc">类型：{{item.type}}</view>
+      </view>
+    </view>
+  </view>
+
+
+  <textarea class='intro' style='height:200px'>{{item.content}}</textarea>
+
+  </view>
+
+  <view wx:elif='{{length == 0}}' class="nope">
+    <view>没有找到哦！</view>
+    <button type="primary" style="margin-top:20px;"bindtap="bindUpdataView">更新数据库</button>
+  </view>
+
+  <view wx:elif="{{length == -2}}">
+    <view class="book-info">
+      <view style="color:#9e1f08;font-weight:bold;font-size:20px;text-align:center;">数据库的书籍信息</view>
+    <form bindsubmit="bindsubmitForm">
+      <view class="base-info1">
+        <view class="desc1">编号：</view>
+        <input name="index"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">书名：</view>
+        <input name="bookname" bindinput="bindInputName "></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">作者：</view>
+        <input name="author"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">类型：</view>
+        <input name="type"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">价格：</view>
+        <input name="price"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">评分：</view>
+        <input name="score"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">简介：</view>
+        <input name="content"></input>
+      </view>
+      <view class="base-info1">
+        <view class="desc1">海报：</view>
+        <input name="primary" size="mini" name="image" bindtap="changeBigImg">上传海报</input>
+      </view>
+
+      <view class="btn">
+        <button type="primary"size="mini" form-type="submit" id="1">添加</button>
+        <button type="primary"size="mini" form-type="submit" id="2">修改</button>
+        <button type="primary"size="mini" form-type="submit" id="3">删除</button>
+      </view>
+    </form>
+    </view>
+  </view>
+  <view wx:else>
+    <button type="primary" style="margin-top:20px;" bindtap="bindUpdateView">更新数据库</button>
+  </view>
+</view>

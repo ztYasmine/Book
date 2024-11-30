@@ -1,0 +1,45 @@
+<!--pages/buy/buy.wxml-->
+<view class="product">
+  <swiper indicator-dots="true" autoplay="true" interval="1000" duration="2000" style="height:145px;">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width:100%;height:145px"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--主盒子-->
+
+  <!--list-->
+  <view class="goodslist">
+    <!--item-->
+    <block wx:for="{{goodslist}}">
+      <view class="goods">
+        <!--左侧图片盒子-->
+        <view>
+          <image src="{{item.image}}" class="good-img" />
+        </view>
+        <!--右侧说明部分-->
+        <view class="good-cont">
+          <!--上--文字说明-->
+          <view class="goods-navigator">
+            <text class="good-name">{{item.name}}</text>
+          </view>
+          <!--下--价格部分-->
+          <view class="good-price">
+            <text>￥{{item.price}}</text>
+            <image id="{{item.id}}" class="cart" src="/images/icon/gwc.png"bindtap="loadbuy" />
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+
+
+
+
+
+
+
+

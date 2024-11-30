@@ -1,0 +1,23 @@
+<view class="haibao2">
+  <image
+    src="https://tse1-mm.cn.bing.net/th/id/R-C.6c0b5f5503a31fb5461b03c01e11b5e3?rik=gfF0us7lk%2fR2Dw&riu=http%3a%2f%2fimg.sccnn.com%2fbimg%2f339%2f26652.jpg&ehk=GBJv9GZK913rGpaT5GAdCzq9dzE1XF6Z3uZ9xREvuGk%3d&risl=&pid=ImgRaw"
+    class="slide-image" style="width:100%;height:370px"></image>
+</view>
+<image
+    src="https://haoshutj.com/wp-content/uploads/2019/03/DOUBAN.jpg" style="width:100%;height:90px"></image>
+
+    
+<view class="notice">
+  <text></text>
+</view>
+<view class="content1">
+  <view wx:for="{{list}}" class="item" >
+    <view class="listdetail" id="{{item.id}}" bindtap="loadlistDetail">
+    <image src="{{item.image}}"mode="aspectFill"></image>
+    <view class="product">
+    <text>{{item.title}}</text>
+    <image id="{{item.id}}" class="cart" src="/images/icon/gwc.png"/>
+  </view>
+  </view>
+</view>
+</view>

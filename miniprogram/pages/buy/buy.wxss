@@ -1,0 +1,60 @@
+/* pages/buy/buy.wxss */
+.page{
+  height: 100%;
+}
+
+.title_val{
+  font-size: 14px;
+  color: #555;
+  line-height: 30px;
+}
+.goodslist{
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.goods{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #dddddd;
+}
+.good-img{
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
+.good-cont{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+}
+.goodsnavigator{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.good-name{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: #555;
+  justify-content: center;
+}
+.good-price{
+display: flex;
+flex: 1;
+flex-direction: row;
+justify-content: space-between;
+color: green;
+font-weight:600;
+}
+.cart{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}

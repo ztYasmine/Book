@@ -1,0 +1,59 @@
+<!--pages/me/me.wxml-->
+<view class="content">
+  <view class="hr"></view>
+  <view class="bg">
+    <view class="head">
+      <view class="headIcon">
+        <image src="{{mypic}}" style="width:70px;height:70px"></image>
+      </view>
+      <view class="name" bindtap="login">
+        {{name}}
+      </view>
+      <view class="detail">
+        <text>></text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="hr"></view>
+  <view class="nav">
+    <view class="nav-item">
+      <view class="buy" bindtap="loadbuy">
+        <image src="/images/icon/shop2.png" style="width:23px;height:23px;"></image>
+      </view>
+      <view>
+        购物车
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="item">
+<view class="order">我的会员</view>
+<view class="detail2">
+  <text>></text>
+</view>
+</view>
+
+<view class="hr"></view>
+<view class="item">
+  <view class="order">想看的书</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+
+<view class="hr"></view>
+<view class="item">
+  <view class="order">看过的书</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>
+<view class="hr"></view>
+<view class="item">
+  <view class="order">收藏夹</view>
+  <view class="detail2">
+    <text>></text>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+/* pages/bkbuy/bkbuy.wxss */
+.checkbox{padding: 50rpx;}
+.checkbox-handle{margin-bottom: 40rpx;}
+.count{overflow: hidden;width:300rpx;margin-top: 50rpx}
+.add{float:left;border:2rpx solid #D0CCCB;padding: 1rpx 20rpx;margin-left: 60rpx}
+.import{border:2rpx solid #D0CCCB;vertical-align: top;width:80rpx;display:inline-block;text-align: center;margin-left: 12rpx;font-size:28rpx }
+.reduce{display: inline-block;border:2rpx solid #D0CCCB;padding: 1rpx 20rpx}
+
+.frame {
+  width: 70%;
+  margin-left: 5px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.structure{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+
+}

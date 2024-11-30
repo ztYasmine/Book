@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/books/books",
+    "pages/logs/logs",
+    "pages/buy/buy",
+    "pages/me/me",
+    "pages/bookDetail/bookDetail",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/sousuo/sousuo",
+    "pages/listDetail/listDetail",
+    "pages/bkbuy/bkbuy"
+
+
+    
+  
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#71C084",
+    "navigationBarTitleText": "图书小程序",
+    "navigationBarTextStyle": "white"
+  },
+   "tabBar": {
+    "backgroundColor": "#71C084",
+    "selectedColor": "#FE4E62",
+    "list": [
+      {
+        "pagePath": "pages/books/books",
+        "text": "首页",
+        "iconPath": "/images/bar/02.png",
+        "selectedIconPath": "/images/bar/01.png"
+      },
+      {
+        "pagePath": "pages/buy/buy",
+        "text": "商城",
+        "iconPath": "/images/icon/shop1.png",
+        "selectedIconPath": "/images/icon/shop2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/bar/me-01.png",
+        "selectedIconPath": "/images/bar/me-02.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

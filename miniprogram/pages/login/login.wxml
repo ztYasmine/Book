@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class="content">
+  <view class="hr"></view>
+  <form bindsubmit="bindsubmitForm">
+    <view class="bg">
+      <view class="item">
+        <view class="name">账户</view>
+        <input type="text" placeholder="请输入姓名" bindinput="nameinput"></input>
+      </view>
+
+      <view class="item">
+        <view class="name">密码</view>
+        <input type="password" placeholder="输入密码" bindinput="pdinput"></input>
+      </view>
+
+      <view class="item" style="margin:30px">
+        <image src="{{userpic}}" style="width:100px;height:100px"></image>
+        <button class="btn" size="mini" bindtap="chooseImage">头像</button>
+      </view>
+    </view>
+    <view class="btn">
+    <button form-type="submit" type="primary" style="width:30%" id="1">注册</button>
+     <button form-type="submit"type="primary" style="width:30%" id="2">登陆</button>
+  </view>
+  </form>
+</view>

@@ -1,0 +1,95 @@
+/* pages/sousuo/sousuo.wxss */
+.content{
+  font-family: "Microsoft YaHei";
+  background-color: #e3f2f3;
+}
+.search{
+  width: 80%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color:#ffffff ;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-left: 20px;
+align-items: center;
+}
+.search image{
+  margin-left: 10px;
+}
+.content{
+  font-family: "Microsoft Yahei";
+}
+.bg{
+  width: 100%;
+  background-color: #3f544f;
+  height: 200px;
+}
+.book{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+.book image{
+  width: 100px;
+  height: 150px;
+}
+
+.base-info{
+  width: 60%;
+  font-size: 12px;
+  padding-top: 10px;
+  line-height:20px;
+  margin-left: 10px;
+}
+.name{
+  color:#ffffff
+}
+.desc{
+  font-size: 11px;
+  color: #f2f2fe;
+  height: 28px;
+  line-height: 28px;
+}
+.operate{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+.opr{
+  width: 45%;
+  height: 30px;
+  border: 1px solid#f0f0f0;
+  margin: 0 auto;
+  text-align:center;
+  line-height:30px;
+  color: #000000;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.intro{
+  font-size: 12px;
+  line-height: 25px;
+  margin: 10px;
+}
+.buying{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+.buy{
+  width: 45%;
+  height: 30px;
+  border: 1px solid#f0f0f0;
+  margin: 0 auto;
+  text-align:center;
+  line-height:30px;
+  color: green;
+  background-color: #ffffff;
+  border-radius: 3px;
+  font-size: 13px;
+}

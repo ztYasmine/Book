@@ -1,0 +1,49 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<view class="content">
+  <view class="bg">
+    <view class="book">
+      <view class="pic">
+        <image src="{{book.image}}" mode="aspectFit"></image>
+      </view>
+
+      <view class="base-info" >
+        <view class="name">书名:{{book.title}}</view>
+        <view class="desc">作者:{{book.author}}</view>
+        <view class="desc">出版社：{{book.publisher}}</view>
+        <view class="desc">价格：¥{{book.price}}</view>
+        <view class="desc">类型：{{book.type}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="operate">
+    <view class="opr"bindtap="loadopr">
+      <block wx:if="{{isCollect==false}}">
+        <image src="/images/bar/收藏.jpg"style="width:17px;height:17px;"></image>看过
+      </block>
+      <block wx:elif="{{isCollect==true}}">
+        <image src="/images/bar/收藏-2.jpg"style="width:15px;height:15px;"></image>看过
+      </block>
+</view>
+
+<view class="opr"bindtap="loadopr2">
+      <block wx:if="{{isCollect2==false}}">
+        <image src="/images/bar/喜欢.jpg"style="width:15px;height:15px;"></image>想看
+      </block>
+      <block wx:elif="{{isCollect2==true}}">
+        <image src="/images/bar/喜欢-2.jpg"style="width:15px;height:15px;"></image>想看
+      </block>
+</view>
+  
+</view>
+
+  <textarea class='intro' style='height:200px'>{{book.content}}</textarea>
+
+  <view class="buying">
+    <view class="buy"bindtap="addcar" id="{{book.id}}">立即购买</view>
+    <view class="buy"bindtap="addcar"id="{{book.id}}">加入购物车</view>
+  </view>
+
+</view>
+
+

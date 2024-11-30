@@ -1,0 +1,27 @@
+<!--pages/bkbuy/bkbuy.wxml-->
+<view  wx:for="{{list}}" style="margin-left:30rpx" wx:key>
+  <view bindtap="BindList" data-id="{{item.id}}" data-price="{{item.totle}}">
+  
+    <icon type="success" size="20" color="red" wx:if="{{item.select==true}}"/> 
+    <icon type="circle" size="20"  wx:else/>
+  <view class="structure">
+    <image src="{{item.img}}"class="slide-image" style="width:60px;height:75px"></image>
+    <view class="frame">
+    <view>商品：{{item.name}}</view>
+    <view>单价：{{item.price}}</view>
+   </view> 
+  </view>
+</view>
+
+<view class="count">
+   <view class="add" bindtap="BindAdd" data-id="{{item.id}}">+</view>
+   <input class="import" value="{{item.InputValue}}"  data-id="{{item.id}}" bindinput='BindInput'></input>
+   <view class="reduce {{minusStatus}}" bindtap="BindReaduce" data-id="{{item.id}}">-</view>
+</view>
+<view>商品价格：{{item.totle}}</view>
+</view>
+<view>商品总价格: {{total}}</view>
+<view  bindtap="BindListall" >
+<icon type="success" size="20" color="red" wx:if="{{selectall==true}}"/> 
+    <icon type="circle" size="20"  wx:else/>全部购物车
+</view>

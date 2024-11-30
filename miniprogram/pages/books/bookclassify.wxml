@@ -1,0 +1,37 @@
+<!-- 顶部搜索框 -->
+<view class="content3">
+  <view class="search">
+    <image src="/images/icon/search.png" style="width:35px;height:29px"></image>
+    <input placeholder="请输入书名" type="text" bindtap="bindtap"></input>
+  </view>
+  
+  <view class="container">
+    <!-- 左侧分类 -->
+    <view class="aside" style="height:{{winHeight}}px">
+      <block wx:for="{{navList}}">
+        <text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav"
+          data-index="{{index}}"
+          data-id="{{item.id}}">
+          {{item.name}}
+        </text>
+      </block>
+    </view>
+
+    <!-- 右侧产品 -->
+    <view class="content2">
+      <view class="cps">
+        <block wx:for="{{dishesList1[curNav]}}">
+          <view class="cp-item">
+            <view class="navigator">
+            <image src="{{item.image}}" class="cp-image" bindtap="loadbookDetail" data-value="{{item}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+          </view>
+          </block>
+     
+    </view>
+  </view>
+</view>
+
+
+</view>

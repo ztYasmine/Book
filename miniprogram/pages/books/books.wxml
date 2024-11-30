@@ -1,0 +1,27 @@
+<!--pages/books/books.wxml-->
+<!--pages/movies/movies.wxml-->
+<view class="content">
+  <view class="type">
+   
+    <view class="{{currentTab==0?'select':'default'}}" id="0" bindtap="switchNav">新书推荐</view>
+
+    <view class="{{currentTab==1?'select':'default'}}" id="1" bindtap="switchNav">年度榜单</view>
+
+    <view class="{{currentTab==2?'select':'default'}}" id="2" bindtap="switchNav">图书分类</view>
+
+  </view>
+  <view class="hr"></view>
+
+  <swiper current="{{currentTab}}" style="height:2500px;">
+    <swiper-item>
+    <include src="hotbooks.wxml"></include>
+    </swiper-item>
+    <swiper-item>
+      <include src="booklist.wxml"></include>
+    </swiper-item>
+    <swiper-item>
+    <include src="bookclassify.wxml"></include>
+    </swiper-item>
+  </swiper>
+
+</view>
